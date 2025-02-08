@@ -1,12 +1,11 @@
 import Fastify from "fastify";
 import WebSocket from "ws";
-import dotenv from "dotenv";
+import dotenv from "dotenv/config.js";
 import fastifyFormBody from "@fastify/formbody";
 import fastifyWs from "@fastify/websocket";
 import Twilio from "twilio";
 
-// Load environment variables from .env file
-dotenv.config();
+// Environment variables are now loaded automatically
 
 const {
   ELEVENLABS_AGENT_ID,
